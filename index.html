@@ -1,2 +1,41 @@
-TAKEOVER PROOF -- @mathiasdragsund via HackerOne -- GitHub Pages claim
-<h1>it works</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Subdomain takeover PoC â sandbox.elastic.dev</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+ :root{color-scheme:dark}
+ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b0d10;color:#e7e9ee;
+      font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+ .card{max-width:640px;margin:32px;padding:32px;border:1px solid #2a2f3a;border-radius:14px;background:#12151b}
+ h1{margin:0 0 4px;font-size:22px}
+ .sub{color:#8b93a7;font-size:14px;margin-bottom:20px}
+ code{background:#1b202a;padding:2px 6px;border-radius:5px;font-size:13px}
+ table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14px}
+ td{padding:7px 0;border-bottom:1px solid #232936;vertical-align:top}
+ td:first-child{color:#8b93a7;width:38%}
+ .ok{color:#5ee08a;font-weight:600}
+ footer{margin-top:18px;color:#6d7484;font-size:12px}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Subdomain takeover â <span class="ok">claimed</span></h1>
+  <div class="sub">This page is served by a Vercel project we control. Nothing here belongs to Elastic.</div>
+  <table>
+    <tr><td>Host</td><td><code>sandbox.elastic.dev</code></td></tr>
+    <tr><td>Points to</td><td>Vercel edge (dangling CNAME that was unclaimed)</td></tr>
+    <tr><td>Vercel project</td><td><code>poc-claims</code> â account <code>md-ragsund</code></td></tr>
+    <tr><td>Source</td><td><code>github.com/playtika-cyber/playticorp-poc</code></td></tr>
+    <tr><td>Claimed by</td><td>@mathiasdragsund (HackerOne) â 14matinee.snarks@icloud.com</td></tr>
+    <tr><td>Deployed</td><td><span id="ts">2026-11-26 16:13 UTC</span></td></tr>
+    <tr><td>Nonce</td><td><code>e068e65b17c439ea</code></td></tr>
+  </table>
+  <p>Before the claim, <code>sandbox.elastic.dev</code> answered Vercel's
+  <code>DEPLOYMENT_NOT_FOUND</code> because the hostname pointed at Vercel but no project owned it.
+  Anybody could have registered it; we did.</p>
+  <footer>Screenshot this page together with the DNS answer and the Vercel dashboard for the report.</footer>
+</div>
+</body>
+</html>
